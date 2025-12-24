@@ -5,21 +5,21 @@
 class Gosshit < Formula
   desc "A vim-inspired TUI for managing SSH config files"
   homepage "https://github.com/nicklasos/gosshit"
-  version "1.0.3"
+  version "1.1.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/nicklasos/gosshit/releases/download/v1.0.3/gosshit_1.0.3_Darwin_x86_64.tar.gz"
-      sha256 "f40a447f7d2f73b9721e67f504157fa8901356652b09dd6950b5ea58a7d81bf5"
+      url "https://github.com/nicklasos/gosshit/releases/download/v1.1.0/gosshit_1.1.0_Darwin_x86_64.tar.gz"
+      sha256 "466847ca131ecd9afdcbf766a2ce1c0c7966ff0a897f3dcbd76e79877f19cec4"
 
       def install
         bin.install "gosshit"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/nicklasos/gosshit/releases/download/v1.0.3/gosshit_1.0.3_Darwin_arm64.tar.gz"
-      sha256 "d82993008e64d59e55b3923f1eb17e73000fb35e93dca931c1a4292a78c19876"
+      url "https://github.com/nicklasos/gosshit/releases/download/v1.1.0/gosshit_1.1.0_Darwin_arm64.tar.gz"
+      sha256 "8b8c9561dfdd0543b72d242c368482018887fe9aca1fc55234d8a561d7953c5d"
 
       def install
         bin.install "gosshit"
@@ -29,15 +29,15 @@ class Gosshit < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nicklasos/gosshit/releases/download/v1.0.3/gosshit_1.0.3_Linux_x86_64.tar.gz"
-      sha256 "c0291ce85986737b3cde65b73f44c15c0634739777ebe17ab4e6fcecda4c8fec"
+      url "https://github.com/nicklasos/gosshit/releases/download/v1.1.0/gosshit_1.1.0_Linux_x86_64.tar.gz"
+      sha256 "e7dff4328d1f44fff5f157f6d9baf0cdea7ad4b42efebbff919aa4b5596f7518"
       def install
         bin.install "gosshit"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nicklasos/gosshit/releases/download/v1.0.3/gosshit_1.0.3_Linux_arm64.tar.gz"
-      sha256 "8f338aee60c927ae81644bba214eb808970adda87144a0b5725cfe0857086329"
+      url "https://github.com/nicklasos/gosshit/releases/download/v1.1.0/gosshit_1.1.0_Linux_arm64.tar.gz"
+      sha256 "bc5d4ac162010318ec551df973208337ec89fc54241d9668998c1e20f8c5b0e5"
       def install
         bin.install "gosshit"
       end
