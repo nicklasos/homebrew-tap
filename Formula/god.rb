@@ -5,21 +5,21 @@
 class God < Formula
   desc "A vim-inspired TUI for managing supervisord processes"
   homepage "https://github.com/nicklasos/god"
-  version "1.0.0"
+  version "1.0.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/nicklasos/god/releases/download/v1.0.0/god_Darwin_x86_64.tar.gz"
-      sha256 "c55c647335b54c3715ba298790a4f99ad1d7c10dcd13cd9f26d5285d55e798a9"
+      url "https://github.com/nicklasos/god/releases/download/v1.0.1/god_Darwin_x86_64.tar.gz"
+      sha256 "4acfba2df03704435bd5297ef41dfc587f6448e328b7f5eb5979a6a3fc664c49"
 
       def install
         bin.install "god"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/nicklasos/god/releases/download/v1.0.0/god_Darwin_arm64.tar.gz"
-      sha256 "24a86d19a60b5753dbeef9544a244e0f6aace0e2f63a9c8addf48a128b2a436b"
+      url "https://github.com/nicklasos/god/releases/download/v1.0.1/god_Darwin_arm64.tar.gz"
+      sha256 "4f8252eb784e1f048f50f860e3962287472a23069b957b4761762851f641b458"
 
       def install
         bin.install "god"
@@ -29,15 +29,15 @@ class God < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nicklasos/god/releases/download/v1.0.0/god_Linux_x86_64.tar.gz"
-      sha256 "9f6026fb5782d42a437faee4cf9b9a8d2a83980175743b65bda3e975201e8cf8"
+      url "https://github.com/nicklasos/god/releases/download/v1.0.1/god_Linux_x86_64.tar.gz"
+      sha256 "4a281fe528618d0cec8a9e32e62543da8fdbb903fe9db6f588d6c62c4548022a"
       def install
         bin.install "god"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nicklasos/god/releases/download/v1.0.0/god_Linux_arm64.tar.gz"
-      sha256 "1ae75fb5d16252d7ac40cc89cef415718dea1a455e1f259f850f3b5ee1cf36a3"
+      url "https://github.com/nicklasos/god/releases/download/v1.0.1/god_Linux_arm64.tar.gz"
+      sha256 "5348253f1b287ef056b711ce9471897749c9051c3afd8302ce7f3c265721a479"
       def install
         bin.install "god"
       end
